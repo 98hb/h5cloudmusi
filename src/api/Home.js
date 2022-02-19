@@ -6,7 +6,17 @@ import request from "@/utils/request"// 导入网路请求方法 js文件可以�
 接口地址 : /personalized
 调用例子 : /personalized?limit=1 */
 // 首页推荐歌单
-export const recommendMusi = params => request({
+export const recommendMusic = params => request({
     url: "/personalized",
     params
 })
+/* 
+推荐新音乐
+说明 : 调用此接口 , 可获取推荐新音乐
+可选参数 : limit: 取出数量 , 默认为 10 (不支持 offset)
+接口地址 : /personalized/newsong
+调用例子 : /personalized/newsong */
+// export const newMusic = params => request({
+//     url: "/personalized/newsong",
+//     params
+// })

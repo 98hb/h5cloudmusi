@@ -7,19 +7,21 @@
         <p class="song_name">{{ obj.name }}</p>
       </van-col>
     </van-row>
+    <p class="title">最新音乐</p>
   </div>
 </template>
 
 <script>
-import { recommendMusiAPI } from "@/api";
+import { recommendMusicAPI } from "@/api"; //newMusicAPI
 export default {
   data() {
     return {
       reList: [],
+      // newList: [],
     };
   },
   async created() {
-    const res = await recommendMusiAPI({
+    const res = await recommendMusicAPI({
       limit: 6,
     });
     console.log(res);
@@ -48,5 +50,8 @@ export default {
   -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
   -webkit-line-clamp: 2; /** 显示的行数 **/
   overflow: hidden; /** 隐藏超出的内容 **/
+}
+.van-cell {
+  border-bottom: 1px solid lightgray;
 }
 </style>

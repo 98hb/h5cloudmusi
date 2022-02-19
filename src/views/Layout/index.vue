@@ -19,8 +19,6 @@
       <van-tabbar-item replace to="/layout/search" icon="search"
         >搜索</van-tabbar-item
       >
-      <!-- <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">标签</van-tabbar-item> -->
     </van-tabbar>
   </div>
 </template>

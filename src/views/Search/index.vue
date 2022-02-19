@@ -1,11 +1,44 @@
 <template>
   <div>
-    <p>我是搜索页面</p>
+    <!-- <p>我是搜索页面</p> -->
+    <van-search shape="round" v-model="value" placeholder="请输入搜索关键词" />
+    <div class="search_wrap">
+      <div class="hot_title">
+        <div class="hot_name_wrap">
+          <div
+            class="hot_item"
+            v-for="(obj, index) in searchLisgt"
+            :key="index"
+            @click="fn(obj.first)"
+          >
+            {{ obj.first }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { hotSearchAPI } from "@/api";
+export default {
+  data() {
+    return {
+      value: "",
+      searchLisgt: [],
+    };
+  },
+  methods: {
+    fn(val) {
+      this.value = val;
+    },
+  },
+  async created() {
+    const res = await hotSearchAPI({});
+    console.log(res);
+    this.searchLisgt = res.data.result.hots;
+  },
+};
 </script>
 
 <style scoped>
