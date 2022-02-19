@@ -19,14 +19,14 @@ const routes = [//路由规则
             {
                 path: "home",//起始路径
                 component: Home,//注册页面
-                meta: {
+                meta: {//添加路由信息
                     title: "首页"
                 }
             },
             {
                 path: "search",//起始路径
                 component: Search,//注册页面
-                meta: {
+                meta: {//添加路由信息
                     title: "搜索"
                 }
             }

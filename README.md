@@ -85,6 +85,17 @@ http://localhost:8080/#/layout/search 二级路由显示页面
 vant 组件库 点击tabBar实现跳转时替换当前页面历史
 ~~~
 
+### route.meta
+
+~~~
+watch :(){}监听路由信息
+    watch: {
+    $route() {
+      this.当前变量 = this.$route.meta.路由变量; //点击切换路由同步更改路由meta 信息
+    },
+  },
+~~~
+
 
 
 ###async await 
