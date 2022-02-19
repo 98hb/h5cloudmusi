@@ -10,7 +10,7 @@ alternate-address[备用地址](https://github.com/Binaryify/NeteaseCloudMusicAp
 
 ##### `dependencies`运行代码时需要的依赖项
 
-~~~json
+```json
 "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
@@ -20,13 +20,13 @@ alternate-address[备用地址](https://github.com/Binaryify/NeteaseCloudMusicAp
     "vue": "^2.6.11",
     "vue-router": "^3.5.1"
   }
-~~~
+```
 
 ###开发依赖
 
 ##### `devDependencies`开发工作流程中的某些时候需要的依赖项，但在运行代码时不需要(生产环境下的包依赖)
 
-~~~json
+```json
 
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -38,11 +38,11 @@ alternate-address[备用地址](https://github.com/Binaryify/NeteaseCloudMusicAp
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   }
-~~~
+```
 
 ###yarn add 包依赖
 
-~~~bash
+```bash
 yarn global add <package...>全局安装包依赖。
 
 yarn add global <package...>本地安装包依赖。
@@ -51,23 +51,28 @@ yarn add axios@0.21.1 vant@2.12.15 vue-router@3.5.1 postcss@8.2.13	postcss-pxtor
 
 yarn add babel-plugin-import@1.13.3  -D
 
-~~~
+```
 
 ###静态页面铺设
 
-~~~bash
+```bash
 views/Layout/index.vue  -	负责布局(上下导航 - 中间二级路由切换首页和搜索页面)
 views/Home/index.vue    -	首页页面
 views/Search/index.vue  -	搜索页面
 views/Play/index.vue	-	播放页面
-~~~
+```
 
-###云音乐-路由准备
 
-~~~bash
+###vue-router
+```bash
+下载/引入/注册/规则/路由对象/注入/显示
+
+改变url的hash值路径,导致对应组件显示
+
 路由配置, 显示不同路由页面
 
-router/index.js - 准备路由 - 以及默认显示Layout, 然后Layout默认显示二级路由的首页
+APP.vue 一级路由挂载点
 
-~~~
+Layout.vue 二级路由挂载点
+```
 
