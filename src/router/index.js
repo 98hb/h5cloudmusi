@@ -18,11 +18,17 @@ const routes = [//路由规则
         children: [//二级路页面
             {
                 path: "home",//起始路径
-                component: Home//注册页面
+                component: Home,//注册页面
+                meta: {
+                    title: "首页"
+                }
             },
             {
                 path: "search",//起始路径
-                component: Search//注册页面
+                component: Search,//注册页面
+                meta: {
+                    title: "搜索"
+                }
             }
         ]
     }, {
