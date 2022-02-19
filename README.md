@@ -87,13 +87,27 @@ vant 组件库 点击tabBar实现跳转时替换当前页面历史
 
 ### route.meta
 
-~~~
+~~~vue
 watch :(){}监听路由信息
+ data() {
+    return {
+      当前变量: this.$route.meta.路由变量, //默认显示路由meta 信息
+    };
+  },
     watch: {
     $route() {
       this.当前变量 = this.$route.meta.路由变量; //点击切换路由同步更改路由meta 信息
     },
   },
+~~~
+
+### axios
+
+~~~js
+// 网络请求
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:xxx"
+export default axios
 ~~~
 
 
