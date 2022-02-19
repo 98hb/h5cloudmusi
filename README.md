@@ -73,6 +73,9 @@ views/Play/index.vue	-	播放页面
 
 APP.vue 一级路由挂载点
 
-Layout.vue 二级路由挂载点
+Layout.vue 二级路由挂载点  
+
+http://localhost:8080/#/layout/home  二级路由显示页面
+http://localhost:8080/#/layout/search 二级路由显示页面
 ```
 
