@@ -110,11 +110,18 @@ axios.defaults.baseURL = "http://localhost:xxx"
 export default axios
 ~~~
 
-
-
 ###async await 
 
 [5.3 ES6 async 函数地址](https://www.runoob.com/w3cnote/es6-async.html)
+
+~~~js
+import { recommendMusiAPI } from "@/api"
+async function fn() {
+  const res = await recommendMusiAPI()
+  console.log(res);
+}
+fn()//main.js 测试返回推荐音乐列表
+~~~
 
 
 
