@@ -79,3 +79,17 @@ http://localhost:8080/#/layout/home  二级路由显示页面
 http://localhost:8080/#/layout/search 二级路由显示页面
 ```
 
+### tabBar集成路由
+
+~~~ 
+vant 组件库 点击tabBar实现跳转时替换当前页面历史
+~~~
+
+
+
+###async await 
+
+[5.3 ES6 async 函数地址](https://www.runoob.com/w3cnote/es6-async.html)
+
+
+

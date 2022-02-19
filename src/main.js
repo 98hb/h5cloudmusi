@@ -6,17 +6,17 @@ import App from './App.vue'
 import "@/mobile/flexible"//适配
 import "@/styles/reset.css"//初始化样式
 import router from "@/router"//导入路由对象
-// import { Tabbar, TabbarItem, NavBar, Col, Row, Image as VanImage, Cell, Icon, Search, List } from 'vant';
-// Vue.use(List);
-// Vue.use(Search);
-// Vue.use(Icon);
-// Vue.use(Cell);
-// Vue.use(VanImage);
-// Vue.use(Col);
-// Vue.use(Row);
-// Vue.use(Tabbar);
-// Vue.use(TabbarItem);
-// Vue.use(NavBar);
+import { Tabbar, TabbarItem, NavBar, Col, Row, Image as VanImage, Cell, Icon, Search, List } from 'vant';
+Vue.use(List);
+Vue.use(Search);
+Vue.use(Icon);
+Vue.use(Cell);
+Vue.use(VanImage);
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(NavBar);
+Vue.use(TabbarItem);
+Vue.use(Tabbar);
 //mount 挂载 render 渲染
 Vue.config.productionTip = false
 new Vue({
