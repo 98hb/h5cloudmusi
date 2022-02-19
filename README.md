@@ -40,12 +40,34 @@ alternate-address[备用地址](https://github.com/Binaryify/NeteaseCloudMusicAp
   }
 ~~~
 
-###yarn add
+###yarn add 包依赖
 
 ~~~bash
 yarn global add <package...>全局安装包依赖。
 
 yarn add global <package...>本地安装包依赖。
+
+yarn add axios@0.21.1 vant@2.12.15 vue-router@3.5.1 postcss@8.2.13	postcss-pxtorem@5.1.1
+
+yarn add babel-plugin-import@1.13.3  -D
+
+~~~
+
+###静态页面铺设
+
+~~~bash
+views/Layout/index.vue  -	负责布局(上下导航 - 中间二级路由切换首页和搜索页面)
+views/Home/index.vue    -	首页页面
+views/Search/index.vue  -	搜索页面
+views/Play/index.vue	-	播放页面
+~~~
+
+###云音乐-路由准备
+
+~~~bash
+路由配置, 显示不同路由页面
+
+router/index.js - 准备路由 - 以及默认显示Layout, 然后Layout默认显示二级路由的首页
 
 ~~~
 
